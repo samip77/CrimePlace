@@ -2,7 +2,7 @@
 A simple Objective-C app that allows the user to browse google maps in London, UK and see street crimes that occurred as returned by the UK Police crime location JSON RESTful API.
 
 # Demo 
-[![Watch the video](https://img.youtube.com/vi/PCexwSa602w/hqdefault.jpg)](https://youtu.be/https://youtu.be/PCexwSa602w)
+[![Watch the video](https://img.youtube.com/vi/PCexwSa602w/hqdefault.jpg)](https://youtu.be/PCexwSa602w)
 
 # Requirements
 1. Using the Google Maps SDK build a simple app with a single Google Maps screen that
