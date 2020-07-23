@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		346EB74F2464FCD7007EB8ED /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 346EB74E2464FCD7007EB8ED /* AlertView.xib */; };
+		346EB752246500F7007EB8ED /* AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346EB751246500F7007EB8ED /* AlertView.m */; };
+		346EB75C2465A7FF007EB8ED /* ProximityFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 346EB75B2465A7FF007EB8ED /* ProximityFilter.m */; };
+		346EB75F2465A8BF007EB8ED /* IndexBasedFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 346EB75E2465A8BF007EB8ED /* IndexBasedFilter.m */; };
+		34A5C70F2462B78700B6AB94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C70E2462B78700B6AB94 /* AppDelegate.m */; };
+		34A5C7122462B78700B6AB94 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C7112462B78700B6AB94 /* SceneDelegate.m */; };
+		34A5C7182462B78700B6AB94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A5C7162462B78700B6AB94 /* Main.storyboard */; };
+		34A5C71A2462B78900B6AB94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A5C7192462B78900B6AB94 /* Assets.xcassets */; };
+		34A5C71D2462B78900B6AB94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A5C71B2462B78900B6AB94 /* LaunchScreen.storyboard */; };
+		34A5C7202462B78900B6AB94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C71F2462B78900B6AB94 /* main.m */; };
+		34A5C72A2462B78900B6AB94 /* Crime_PlaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C7292462B78900B6AB94 /* Crime_PlaceTests.m */; };
+		34A5C7452462BDCE00B6AB94 /* AppDelegate+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C7442462BDCE00B6AB94 /* AppDelegate+Map.m */; };
+		34A5C7492462C06B00B6AB94 /* APIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C7482462C06B00B6AB94 /* APIService.m */; };
+		34A5C74C2462CA4400B6AB94 /* CrimeMapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C74B2462CA4400B6AB94 /* CrimeMapViewModel.m */; };
+		34A5C7542462CAE800B6AB94 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C7512462CAE700B6AB94 /* Location.m */; };
+		34A5C7552462CAE800B6AB94 /* Street.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C7522462CAE700B6AB94 /* Street.m */; };
+		34A5C7562462CAE800B6AB94 /* CrimePlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C7532462CAE800B6AB94 /* CrimePlace.m */; };
+		34A5C7642462CC8F00B6AB94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C7632462CC8F00B6AB94 /* ViewController.m */; };
+		34A5C7692462CD6E00B6AB94 /* Define.h in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C7682462CD6E00B6AB94 /* Define.h */; };
+		34A5C7702462EC1600B6AB94 /* UIViewController+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C76F2462EC1600B6AB94 /* UIViewController+Alert.m */; };
+		3F31C335F991E41680B8565D /* Pods_Crime_Place.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215176B8120983E986A90A54 /* Pods_Crime_Place.framework */; };
+		B0B60018CA0784AECA77A322 /* Pods_Crime_PlaceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133BEEAB39D221AE70DCA704 /* Pods_Crime_PlaceTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34A5C7262462B78900B6AB94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34A5C7022462B78700B6AB94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34A5C7092462B78700B6AB94;
+			remoteInfo = "Crime Place";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A0889180D4979E9F4634FA9 /* Pods-Crime Place.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crime Place.release.xcconfig"; path = "Target Support Files/Pods-Crime Place/Pods-Crime Place.release.xcconfig"; sourceTree = "<group>"; };
+		0DAAE3E2AD26F4EA24D7DC3F /* Pods-Crime Place.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crime Place.debug.xcconfig"; path = "Target Support Files/Pods-Crime Place/Pods-Crime Place.debug.xcconfig"; sourceTree = "<group>"; };
+		133BEEAB39D221AE70DCA704 /* Pods_Crime_PlaceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crime_PlaceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		215176B8120983E986A90A54 /* Pods_Crime_Place.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crime_Place.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		346EB74E2464FCD7007EB8ED /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
+		346EB750246500F7007EB8ED /* AlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
+		346EB751246500F7007EB8ED /* AlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertView.m; sourceTree = "<group>"; };
+		346EB75324656B11007EB8ED /* CrimeMapDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrimeMapDelegate.h; sourceTree = "<group>"; };
+		346EB75A2465A7FF007EB8ED /* ProximityFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProximityFilter.h; sourceTree = "<group>"; };
+		346EB75B2465A7FF007EB8ED /* ProximityFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProximityFilter.m; sourceTree = "<group>"; };
+		346EB75D2465A8BF007EB8ED /* IndexBasedFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexBasedFilter.h; sourceTree = "<group>"; };
+		346EB75E2465A8BF007EB8ED /* IndexBasedFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexBasedFilter.m; sourceTree = "<group>"; };
+		346EB7662465AC58007EB8ED /* LocationFilterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationFilterProtocol.h; sourceTree = "<group>"; };
+		34A5C70A2462B78700B6AB94 /* Crime Place.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crime Place.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34A5C70D2462B78700B6AB94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		34A5C70E2462B78700B6AB94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		34A5C7102462B78700B6AB94 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		34A5C7112462B78700B6AB94 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		34A5C7172462B78700B6AB94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34A5C7192462B78900B6AB94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34A5C71C2462B78900B6AB94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34A5C71E2462B78900B6AB94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34A5C71F2462B78900B6AB94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34A5C7252462B78900B6AB94 /* Crime PlaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crime PlaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34A5C7292462B78900B6AB94 /* Crime_PlaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Crime_PlaceTests.m; sourceTree = "<group>"; };
+		34A5C72B2462B78900B6AB94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34A5C7432462BDCE00B6AB94 /* AppDelegate+Map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Map.h"; sourceTree = "<group>"; };
+		34A5C7442462BDCE00B6AB94 /* AppDelegate+Map.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Map.m"; sourceTree = "<group>"; };
+		34A5C7472462C06B00B6AB94 /* APIService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIService.h; sourceTree = "<group>"; };
+		34A5C7482462C06B00B6AB94 /* APIService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIService.m; sourceTree = "<group>"; };
+		34A5C74A2462CA4400B6AB94 /* CrimeMapViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrimeMapViewModel.h; sourceTree = "<group>"; };
+		34A5C74B2462CA4400B6AB94 /* CrimeMapViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrimeMapViewModel.m; sourceTree = "<group>"; };
+		34A5C74E2462CAE700B6AB94 /* Street.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Street.h; sourceTree = "<group>"; };
+		34A5C74F2462CAE700B6AB94 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		34A5C7502462CAE700B6AB94 /* CrimePlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrimePlace.h; sourceTree = "<group>"; };
+		34A5C7512462CAE700B6AB94 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		34A5C7522462CAE700B6AB94 /* Street.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Street.m; sourceTree = "<group>"; };
+		34A5C7532462CAE800B6AB94 /* CrimePlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimePlace.m; sourceTree = "<group>"; };
+		34A5C7622462CC8F00B6AB94 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		34A5C7632462CC8F00B6AB94 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		34A5C7682462CD6E00B6AB94 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		34A5C76E2462EC1600B6AB94 /* UIViewController+Alert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alert.h"; sourceTree = "<group>"; };
+		34A5C76F2462EC1600B6AB94 /* UIViewController+Alert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alert.m"; sourceTree = "<group>"; };
+		82D41157BF6F2106356075DF /* Pods-Crime PlaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crime PlaceTests.release.xcconfig"; path = "Target Support Files/Pods-Crime PlaceTests/Pods-Crime PlaceTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D51A8722C5E3C46A44F1D23 /* Pods-Crime PlaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crime PlaceTests.debug.xcconfig"; path = "Target Support Files/Pods-Crime PlaceTests/Pods-Crime PlaceTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34A5C7072462B78700B6AB94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F31C335F991E41680B8565D /* Pods_Crime_Place.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34A5C7222462B78900B6AB94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B60018CA0784AECA77A322 /* Pods_Crime_PlaceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		346EB74C2464FCAC007EB8ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				346EB74D2464FCC1007EB8ED /* AlertView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		346EB74D2464FCC1007EB8ED /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				346EB74E2464FCD7007EB8ED /* AlertView.xib */,
+				346EB750246500F7007EB8ED /* AlertView.h */,
+				346EB751246500F7007EB8ED /* AlertView.m */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
+		346EB7592465A7D2007EB8ED /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				346EB75A2465A7FF007EB8ED /* ProximityFilter.h */,
+				346EB75B2465A7FF007EB8ED /* ProximityFilter.m */,
+				346EB75D2465A8BF007EB8ED /* IndexBasedFilter.h */,
+				346EB75E2465A8BF007EB8ED /* IndexBasedFilter.m */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		34A5C7012462B78700B6AB94 = {
+			isa = PBXGroup;
+			children = (
+				34A5C70C2462B78700B6AB94 /* Crime Place */,
+				34A5C7282462B78900B6AB94 /* Crime PlaceTests */,
+				34A5C70B2462B78700B6AB94 /* Products */,
+				CE34C20EBBCF7EFB2B60629C /* Pods */,
+				B33A4B60DB06A1DE244C70D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		34A5C70B2462B78700B6AB94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34A5C70A2462B78700B6AB94 /* Crime Place.app */,
+				34A5C7252462B78900B6AB94 /* Crime PlaceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34A5C70C2462B78700B6AB94 /* Crime Place */ = {
+			isa = PBXGroup;
+			children = (
+				34A5C73D2462B9AB00B6AB94 /* AppDelegate */,
+				34A5C73B2462B87C00B6AB94 /* shared */,
+				34A5C7372462B81300B6AB94 /* Storyboards */,
+				34A5C7362462B7D300B6AB94 /* Application */,
+				34A5C7342462B79100B6AB94 /* Resources */,
+			);
+			path = "Crime Place";
+			sourceTree = "<group>";
+		};
+		34A5C7282462B78900B6AB94 /* Crime PlaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				34A5C7292462B78900B6AB94 /* Crime_PlaceTests.m */,
+				34A5C72B2462B78900B6AB94 /* Info.plist */,
+			);
+			path = "Crime PlaceTests";
+			sourceTree = "<group>";
+		};
+		34A5C7342462B79100B6AB94 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				34A5C7192462B78900B6AB94 /* Assets.xcassets */,
+				34A5C71E2462B78900B6AB94 /* Info.plist */,
+				34A5C71F2462B78900B6AB94 /* main.m */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		34A5C7352462B7BF00B6AB94 /* CrimeMap */ = {
+			isa = PBXGroup;
+			children = (
+				346EB7592465A7D2007EB8ED /* Filter */,
+				34A5C75D2462CC1400B6AB94 /* View */,
+				34A5C74D2462CA8700B6AB94 /* Protocol */,
+				34A5C73C2462B8C100B6AB94 /* Service */,
+				34A5C73A2462B85D00B6AB94 /* Model */,
+				34A5C7382462B84E00B6AB94 /* ViewModel */,
+			);
+			path = CrimeMap;
+			sourceTree = "<group>";
+		};
+		34A5C7362462B7D300B6AB94 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				34A5C7352462B7BF00B6AB94 /* CrimeMap */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		34A5C7372462B81300B6AB94 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				34A5C7162462B78700B6AB94 /* Main.storyboard */,
+				34A5C71B2462B78900B6AB94 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		34A5C7382462B84E00B6AB94 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				34A5C74A2462CA4400B6AB94 /* CrimeMapViewModel.h */,
+				34A5C74B2462CA4400B6AB94 /* CrimeMapViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		34A5C73A2462B85D00B6AB94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34A5C7502462CAE700B6AB94 /* CrimePlace.h */,
+				34A5C7532462CAE800B6AB94 /* CrimePlace.m */,
+				34A5C74F2462CAE700B6AB94 /* Location.h */,
+				34A5C7512462CAE700B6AB94 /* Location.m */,
+				34A5C74E2462CAE700B6AB94 /* Street.h */,
+				34A5C7522462CAE700B6AB94 /* Street.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34A5C73B2462B87C00B6AB94 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				346EB74C2464FCAC007EB8ED /* View */,
+				34A5C76D2462EBFC00B6AB94 /* Category-Extension */,
+				34A5C7682462CD6E00B6AB94 /* Define.h */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		34A5C73C2462B8C100B6AB94 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				34A5C7472462C06B00B6AB94 /* APIService.h */,
+				34A5C7482462C06B00B6AB94 /* APIService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		34A5C73D2462B9AB00B6AB94 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				34A5C70D2462B78700B6AB94 /* AppDelegate.h */,
+				34A5C70E2462B78700B6AB94 /* AppDelegate.m */,
+				34A5C7102462B78700B6AB94 /* SceneDelegate.h */,
+				34A5C7112462B78700B6AB94 /* SceneDelegate.m */,
+				34A5C7432462BDCE00B6AB94 /* AppDelegate+Map.h */,
+				34A5C7442462BDCE00B6AB94 /* AppDelegate+Map.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		34A5C74D2462CA8700B6AB94 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				346EB75324656B11007EB8ED /* CrimeMapDelegate.h */,
+				346EB7662465AC58007EB8ED /* LocationFilterProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		34A5C75D2462CC1400B6AB94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34A5C7622462CC8F00B6AB94 /* ViewController.h */,
+				34A5C7632462CC8F00B6AB94 /* ViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34A5C76D2462EBFC00B6AB94 /* Category-Extension */ = {
+			isa = PBXGroup;
+			children = (
+				34A5C76E2462EC1600B6AB94 /* UIViewController+Alert.h */,
+				34A5C76F2462EC1600B6AB94 /* UIViewController+Alert.m */,
+			);
+			path = "Category-Extension";
+			sourceTree = "<group>";
+		};
+		B33A4B60DB06A1DE244C70D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				215176B8120983E986A90A54 /* Pods_Crime_Place.framework */,
+				133BEEAB39D221AE70DCA704 /* Pods_Crime_PlaceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE34C20EBBCF7EFB2B60629C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DAAE3E2AD26F4EA24D7DC3F /* Pods-Crime Place.debug.xcconfig */,
+				0A0889180D4979E9F4634FA9 /* Pods-Crime Place.release.xcconfig */,
+				9D51A8722C5E3C46A44F1D23 /* Pods-Crime PlaceTests.debug.xcconfig */,
+				82D41157BF6F2106356075DF /* Pods-Crime PlaceTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34A5C7092462B78700B6AB94 /* Crime Place */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34A5C72E2462B78900B6AB94 /* Build configuration list for PBXNativeTarget "Crime Place" */;
+			buildPhases = (
+				9B36FC09EF38610076C9CDD2 /* [CP] Check Pods Manifest.lock */,
+				34A5C7062462B78700B6AB94 /* Sources */,
+				34A5C7072462B78700B6AB94 /* Frameworks */,
+				34A5C7082462B78700B6AB94 /* Resources */,
+				F6C4EC1A7F65DA56A01732E3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Crime Place";
+			productName = "Crime Place";
+			productReference = 34A5C70A2462B78700B6AB94 /* Crime Place.app */;
+			productType = "com.apple.product-type.application";
+		};
+		34A5C7242462B78900B6AB94 /* Crime PlaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34A5C7312462B78900B6AB94 /* Build configuration list for PBXNativeTarget "Crime PlaceTests" */;
+			buildPhases = (
+				2B9BC8DE4D853E772E7D08C2 /* [CP] Check Pods Manifest.lock */,
+				34A5C7212462B78900B6AB94 /* Sources */,
+				34A5C7222462B78900B6AB94 /* Frameworks */,
+				34A5C7232462B78900B6AB94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34A5C7272462B78900B6AB94 /* PBXTargetDependency */,
+			);
+			name = "Crime PlaceTests";
+			productName = "Crime PlaceTests";
+			productReference = 34A5C7252462B78900B6AB94 /* Crime PlaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34A5C7022462B78700B6AB94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Samip shah";
+				TargetAttributes = {
+					34A5C7092462B78700B6AB94 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					34A5C7242462B78900B6AB94 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 34A5C7092462B78700B6AB94;
+					};
+				};
+			};
+			buildConfigurationList = 34A5C7052462B78700B6AB94 /* Build configuration list for PBXProject "Crime Place" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34A5C7012462B78700B6AB94;
+			productRefGroup = 34A5C70B2462B78700B6AB94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34A5C7092462B78700B6AB94 /* Crime Place */,
+				34A5C7242462B78900B6AB94 /* Crime PlaceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34A5C7082462B78700B6AB94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346EB74F2464FCD7007EB8ED /* AlertView.xib in Resources */,
+				34A5C71D2462B78900B6AB94 /* LaunchScreen.storyboard in Resources */,
+				34A5C71A2462B78900B6AB94 /* Assets.xcassets in Resources */,
+				34A5C7182462B78700B6AB94 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34A5C7232462B78900B6AB94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B9BC8DE4D853E772E7D08C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crime PlaceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B36FC09EF38610076C9CDD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crime Place-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6C4EC1A7F65DA56A01732E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crime Place/Pods-Crime Place-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crime Place/Pods-Crime Place-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Crime Place/Pods-Crime Place-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34A5C7062462B78700B6AB94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34A5C7692462CD6E00B6AB94 /* Define.h in Sources */,
+				346EB752246500F7007EB8ED /* AlertView.m in Sources */,
+				34A5C7562462CAE800B6AB94 /* CrimePlace.m in Sources */,
+				34A5C7492462C06B00B6AB94 /* APIService.m in Sources */,
+				34A5C7702462EC1600B6AB94 /* UIViewController+Alert.m in Sources */,
+				34A5C70F2462B78700B6AB94 /* AppDelegate.m in Sources */,
+				34A5C7202462B78900B6AB94 /* main.m in Sources */,
+				346EB75C2465A7FF007EB8ED /* ProximityFilter.m in Sources */,
+				346EB75F2465A8BF007EB8ED /* IndexBasedFilter.m in Sources */,
+				34A5C7642462CC8F00B6AB94 /* ViewController.m in Sources */,
+				34A5C7452462BDCE00B6AB94 /* AppDelegate+Map.m in Sources */,
+				34A5C7552462CAE800B6AB94 /* Street.m in Sources */,
+				34A5C74C2462CA4400B6AB94 /* CrimeMapViewModel.m in Sources */,
+				34A5C7542462CAE800B6AB94 /* Location.m in Sources */,
+				34A5C7122462B78700B6AB94 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34A5C7212462B78900B6AB94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34A5C72A2462B78900B6AB94 /* Crime_PlaceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34A5C7272462B78900B6AB94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34A5C7092462B78700B6AB94 /* Crime Place */;
+			targetProxy = 34A5C7262462B78900B6AB94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		34A5C7162462B78700B6AB94 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34A5C7172462B78700B6AB94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34A5C71B2462B78900B6AB94 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34A5C71C2462B78900B6AB94 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34A5C72C2462B78900B6AB94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		34A5C72D2462B78900B6AB94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34A5C72F2462B78900B6AB94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DAAE3E2AD26F4EA24D7DC3F /* Pods-Crime Place.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Crime Place/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samip.Crime-Place";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34A5C7302462B78900B6AB94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A0889180D4979E9F4634FA9 /* Pods-Crime Place.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Crime Place/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samip.Crime-Place";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		34A5C7322462B78900B6AB94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D51A8722C5E3C46A44F1D23 /* Pods-Crime PlaceTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5H95LP8XAJ;
+				INFOPLIST_FILE = "Crime PlaceTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samip.Crime-PlaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crime Place.app/Crime Place";
+			};
+			name = Debug;
+		};
+		34A5C7332462B78900B6AB94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82D41157BF6F2106356075DF /* Pods-Crime PlaceTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5H95LP8XAJ;
+				INFOPLIST_FILE = "Crime PlaceTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samip.Crime-PlaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crime Place.app/Crime Place";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34A5C7052462B78700B6AB94 /* Build configuration list for PBXProject "Crime Place" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34A5C72C2462B78900B6AB94 /* Debug */,
+				34A5C72D2462B78900B6AB94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34A5C72E2462B78900B6AB94 /* Build configuration list for PBXNativeTarget "Crime Place" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34A5C72F2462B78900B6AB94 /* Debug */,
+				34A5C7302462B78900B6AB94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34A5C7312462B78900B6AB94 /* Build configuration list for PBXNativeTarget "Crime PlaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34A5C7322462B78900B6AB94 /* Debug */,
+				34A5C7332462B78900B6AB94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34A5C7022462B78700B6AB94 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_Crime_PlaceTests {
+  umbrella header "Pods-Crime PlaceTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
