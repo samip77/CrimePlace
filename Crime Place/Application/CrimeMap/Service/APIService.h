@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Define.h"
+#import "Constants.h"
 
 NS_ASSUME_NONNULL_BEGIN
 /** Bloc used as functional paramter to call  and used when API request  is completed to provide result Array of Place and Error Message if any.*/
@@ -15,8 +15,11 @@ typedef void (^CompletionBlock)(NSArray* _Nullable places, NSString* _Nullable e
 
 @interface APIService : NSObject
 
-+(instancetype) sharedInstance;
--(void) getCrimePlacesfromLatitute:(double) latitude andLongitude:(double) longitude atDate:(NSString *)date withCompletion: (CompletionBlock) completion;
++ (instancetype)sharedInstance;
+- (void)getCrimePlacesfromLatitute:(double)latitude
+                      andLongitude:(double)longitude
+                            atDate:(NSString *)date
+                    withCompletion: (CompletionBlock)completion;
 
 @end
 

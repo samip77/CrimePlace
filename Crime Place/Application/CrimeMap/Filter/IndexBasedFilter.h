@@ -13,7 +13,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface IndexBasedFilter : NSObject<LocationFilterProtocol>
+@interface IndexBasedFilter : NSObject <LocationFilterProtocol>
 
 @end
 

@@ -11,7 +11,7 @@
 @implementation Street
 
 /** @parameter description      Used for displaying the Marker Detail */
--(NSString *)description{
+- (NSString *)description {
     return [NSString stringWithFormat:@"Street:  %@",_name];
 }
 

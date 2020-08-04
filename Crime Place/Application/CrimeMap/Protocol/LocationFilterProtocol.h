@@ -20,10 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
     @parameter places    NSArray  of  @code CrimePlace.h @endCode  which needs to be sorted and filtered.
     @result NSArray     Result of filter from Concrete class using this Protocol.
  */
--(nonnull NSArray *) filterPlace:(nonnull NSArray *)places aroundLatidude:(double) latitude andLongitude:(double) longitude;
+- (nonnull NSArray *)filterPlace:(nonnull NSArray *)places
+                  aroundLatidude:(double)latitude
+                    andLongitude:(double)longitude;
 
 /** @parameter  getName         Used in ViewController to give name to filter control segment */
--(NSString *) getName;
+- (NSString *)getName;
 
 @end
 

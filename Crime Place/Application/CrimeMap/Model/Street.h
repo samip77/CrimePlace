@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface Street : NSObject
+
     @property (nonatomic, strong) NSNumber *streetId;
     @property (nonatomic, strong) NSString *name;
+
 @end
 

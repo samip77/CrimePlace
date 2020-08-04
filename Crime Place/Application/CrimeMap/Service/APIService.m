@@ -7,17 +7,16 @@
 //
 #import "APIService.h"
 #import <Foundation/Foundation.h>
-#import "Define.h"
+#import "Constants.h"
 #import "CrimePlace.h"
 
 
-@implementation APIService{
+@implementation APIService {
     NSURLSessionDataTask *dataTask;
 }
 
 /** Creates a Singleton instance of the API service.This is used by external classes to initialize the APIService*/
-+(instancetype) sharedInstance
-{
++ (instancetype)sharedInstance {
     static APIService *sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -27,8 +26,10 @@
 }
 
 /**Used for API request of Crime Places near the given coordinate and return result using Completion Block*/
--(void) getCrimePlacesfromLatitute:(double) latitude andLongitude:(double) longitude atDate:(NSString *)date withCompletion: (CompletionBlock) completion{
-    
+- (void)getCrimePlacesfromLatitute:(double)latitude
+                      andLongitude:(double)longitude
+                            atDate:(NSString *)date
+                    withCompletion: (CompletionBlock)completion{
     // Setup the request with URL
     NSURL *url = [NSURL URLWithString:BASE_URL];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
@@ -45,7 +46,6 @@
                 ^(NSData * _Nullable data,
                   NSURLResponse * _Nullable response,
                   NSError * _Nullable error) {
-        
         if (error) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 NSString *errorMessage = [NSString stringWithFormat:@"Error Code: %ld\n%@",(long)error.code,error.localizedDescription];
@@ -57,9 +57,7 @@
                 completion(crimePlaces,nil);
             });
         }
-        
     }] ;
-    
     // Fire the request
     [dataTask resume];
 }
@@ -69,8 +67,7 @@
  @parameter data    NSData received from NSURLSession DataTask
  @return NSArray   CrimePlace array parsed from the data
  */
--(NSArray *) crimePlaceArrayFromData:(NSData * _Nullable) data {
-    
+- (NSArray *)crimePlaceArrayFromData:(NSData * _Nullable)data {
     NSError *parsingError;
     NSMutableArray *places = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&parsingError];
     
@@ -101,7 +98,6 @@
         place.location = location;
         [crimePlaces addObject:place];
     }
-    
     return [crimePlaces copy];
 }
 

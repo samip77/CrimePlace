@@ -11,7 +11,7 @@
 @implementation CrimePlace
 
 /** @parameter description      Used for displaying the Marker Detail */
--(NSString *)description{
+- (NSString *)description {
     return [NSString stringWithFormat:@"CATEGORY: %@ \nId: %@ \n%@",_category,[_placeId stringValue],_location.description];
 }
 

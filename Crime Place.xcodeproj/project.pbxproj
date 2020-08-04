@@ -25,7 +25,7 @@
 		34A5C7552462CAE800B6AB94 /* Street.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C7522462CAE700B6AB94 /* Street.m */; };
 		34A5C7562462CAE800B6AB94 /* CrimePlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C7532462CAE800B6AB94 /* CrimePlace.m */; };
 		34A5C7642462CC8F00B6AB94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C7632462CC8F00B6AB94 /* ViewController.m */; };
-		34A5C7692462CD6E00B6AB94 /* Define.h in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C7682462CD6E00B6AB94 /* Define.h */; };
+		34A5C7692462CD6E00B6AB94 /* Constants.h in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C7682462CD6E00B6AB94 /* Constants.h */; };
 		34A5C7702462EC1600B6AB94 /* UIViewController+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A5C76F2462EC1600B6AB94 /* UIViewController+Alert.m */; };
 		3F31C335F991E41680B8565D /* Pods_Crime_Place.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215176B8120983E986A90A54 /* Pods_Crime_Place.framework */; };
 		B0B60018CA0784AECA77A322 /* Pods_Crime_PlaceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133BEEAB39D221AE70DCA704 /* Pods_Crime_PlaceTests.framework */; };
@@ -82,7 +82,7 @@
 		34A5C7532462CAE800B6AB94 /* CrimePlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimePlace.m; sourceTree = "<group>"; };
 		34A5C7622462CC8F00B6AB94 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		34A5C7632462CC8F00B6AB94 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		34A5C7682462CD6E00B6AB94 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		34A5C7682462CD6E00B6AB94 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		34A5C76E2462EC1600B6AB94 /* UIViewController+Alert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alert.h"; sourceTree = "<group>"; };
 		34A5C76F2462EC1600B6AB94 /* UIViewController+Alert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alert.m"; sourceTree = "<group>"; };
 		82D41157BF6F2106356075DF /* Pods-Crime PlaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crime PlaceTests.release.xcconfig"; path = "Target Support Files/Pods-Crime PlaceTests/Pods-Crime PlaceTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -246,7 +246,7 @@
 			children = (
 				346EB74C2464FCAC007EB8ED /* View */,
 				34A5C76D2462EBFC00B6AB94 /* Category-Extension */,
-				34A5C7682462CD6E00B6AB94 /* Define.h */,
+				34A5C7682462CD6E00B6AB94 /* Constants.h */,
 			);
 			path = shared;
 			sourceTree = "<group>";
@@ -488,7 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34A5C7692462CD6E00B6AB94 /* Define.h in Sources */,
+				34A5C7692462CD6E00B6AB94 /* Constants.h in Sources */,
 				346EB752246500F7007EB8ED /* AlertView.m in Sources */,
 				34A5C7562462CAE800B6AB94 /* CrimePlace.m in Sources */,
 				34A5C7492462C06B00B6AB94 /* APIService.m in Sources */,

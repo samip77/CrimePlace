@@ -11,7 +11,7 @@
 @implementation Location
 
 /** @parameter description      Used for displaying the Marker Detail */
--(NSString *)description{
+- (NSString *)description {
     return [NSString stringWithFormat:@"Latitude: %f \nLongitude: %f \n%@",_latitude,_longitude,_street];
 }
 

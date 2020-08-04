@@ -14,15 +14,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-
 @interface CrimeMapViewModel : NSObject
 
-@property (nonatomic, weak) id <CrimeMapDelegate> delegate;
-@property (nonatomic, strong) id <LocationFilterProtocol> locationFilter;
+@property (nonatomic, weak)id <CrimeMapDelegate> delegate;
+@property (nonatomic, strong)id <LocationFilterProtocol> locationFilter;
 
--(void) setMapCentreLatitude:(double) latitude andLongitude:(double) longitude;
--(void) markerTapped:(GMSMarker *)marker;
--(instancetype) init:(id <LocationFilterProtocol>)filter;
+- (void)setMapCentreLatitude:(double)latitude
+                andLongitude:(double)longitude;
+- (void)markerTapped:(GMSMarker *)marker;
+- (instancetype)init:(id <LocationFilterProtocol>)filter;
+
 @end
 
 NS_ASSUME_NONNULL_END

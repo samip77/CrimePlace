@@ -10,8 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "CrimeMapDelegate.h"
 
-@interface ViewController : UIViewController <GMSMapViewDelegate,CrimeMapDelegate>
-
+@interface ViewController : UIViewController <GMSMapViewDelegate, CrimeMapDelegate>
 
 @end
 

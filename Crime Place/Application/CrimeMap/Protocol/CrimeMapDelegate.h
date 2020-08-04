@@ -15,13 +15,16 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol CrimeMapDelegate <NSObject>
 
 /**@param markers     NSArray of  GMSMarker. */
--(void) updateMarkers:(NSArray *) markers;
--(void) displayMarkerDetails:(NSString *) details;
--(void) displayAPIError:(NSString *) error;
+- (void)updateMarkers:(NSArray *)markers;
+- (void)displayMarkerDetails:(NSString *)details;
+- (void)displayAPIError:(NSString *)error;
 
 /**  @param radius       Double value in Meters */
--(void) updateCircleRadius:(double) radius atLatitude:(double) latitude andLongitude:(double) longitude;
--(void) displayActivityIndicator:(BOOL)value;
+- (void)updateCircleRadius:(double)radius
+                atLatitude:(double)latitude
+              andLongitude:(double)longitude;
+- (void)displayActivityIndicator:(BOOL)value;
+
 @end
 
 NS_ASSUME_NONNULL_END

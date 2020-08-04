@@ -10,11 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void (^VoidCompletionBlock)(void);
+typedef void(^VoidCompletionBlock)(void);
 
 @interface UIViewController (Alert)
 
--(void) displayAlert:(NSString *)message withActionMessage:(NSString *)actionMessage onActionCompletion:(VoidCompletionBlock)completion;
+- (void)displayAlert:(NSString *)message
+   withActionMessage:(NSString *)actionMessage
+  onActionCompletion:(VoidCompletionBlock)completion;
 
 @end
 

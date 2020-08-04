@@ -10,8 +10,10 @@
 #import "Street.h"
 
 @interface Location : NSObject
+
     @property (nonatomic) double latitude;
     @property (nonatomic) double longitude;
     @property (nonatomic, strong) Street *street;
+
 @end
 
